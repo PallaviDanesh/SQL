@@ -1,4 +1,4 @@
-/*1)CREATE 2 (state_info, scam_info) with 10 columns
+																																											/*1)CREATE 2 (state_info, scam_info) with 10 columns
 2)ADD 5 Columns using alter command.
 3)rename 5 columns using alter command.
 4)change datatype for 5 columns.
@@ -9,7 +9,7 @@
 /* to use the update and delete , go to edit->preferences->scroll to down and uncheck the safe updates*/
 CREATE DATABASE nation;
 USE nation;
-rollback;
+
 CREATE TABLE state_info(name_of_state varchar(60),capital_city varchar(70),regional_language varchar(60),total_area bigint,total_population bigint,literacy_rate varchar(10),governer_of_state varchar(100),dance_of_state varchar(50),state_festival varchar(40),state_chief_minister varchar(60));
 /*add columns*/
 ALTER TABLE state_info ADD COLUMN state_animal varchar(30);
