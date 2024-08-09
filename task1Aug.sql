@@ -102,7 +102,7 @@ INSERT INTO llr_test_info (test_id, llr_id, test_Date, result, score, test_Locat
 ON DUPLICATE KEY UPDATE llr_id = VALUES(llr_id), test_Date = VALUES(test_Date), result = VALUES(result), score = VALUES(score), test_Location = VALUES(test_Location), test_Type = VALUES(test_Type), duration = VALUES(duration), inspector_Name = VALUES(inspector_Name), inspector_ID = VALUES(inspector_ID);
 
 INSERT INTO driving_license_info (dl_id, llr_id, test_id, Name, Address, dob, issue_Date, expiry_Date, Blood_Group, phone_Number, email) VALUES
-(1, 1, 1, 'Amit Sharma', 'Delhi', '1990-01-01', '2024-01-20', '2029-01-20', 'B+', '9876543210', 'amit.sharma@example.com')
+(1, 1, 1, 'Amit Sharma', 'Delhi', '1990-01-01', '2024-01-20', '2029-01-20', 'B+', '9876543210', 'amit.sharma@gmail.com')
 ON DUPLICATE KEY UPDATE llr_id = VALUES(llr_id), test_id = VALUES(test_id), Name = VALUES(Name), Address = VALUES(Address), dob = VALUES(dob), issue_Date = VALUES(issue_Date), expiry_Date = VALUES(expiry_Date), Blood_Group = VALUES(Blood_Group), phone_Number = VALUES(phone_Number), email = VALUES(email);
 
 INSERT INTO driving_license_test_info (dl_test_id, dl_id, test_Date, result, score, test_Location, test_Type, duration, inspector_Name, inspector_ID) VALUES
@@ -110,13 +110,13 @@ INSERT INTO driving_license_test_info (dl_test_id, dl_id, test_Date, result, sco
 ON DUPLICATE KEY UPDATE dl_id = VALUES(dl_id), test_Date = VALUES(test_Date), result = VALUES(result), score = VALUES(score), test_Location = VALUES(test_Location), test_Type = VALUES(test_Type), duration = VALUES(duration), inspector_Name = VALUES(inspector_Name), inspector_ID = VALUES(inspector_ID);
 
 REPLACE INTO llr_details (LLR_ID, Name, Address, DOB, Issue_Date, Expiry_Date, Blood_Group, Phone_Number, Email, Gender) VALUES
-(1, 'Amit Sharma', 'Delhi', '1990-01-01', '2024-01-10', '2025-01-10', 'B+', '9876543210', 'amit.sharma@example.com', 'M');
+(1, 'Amit Sharma', 'Delhi', '1990-01-01', '2024-01-10', '2025-01-10', 'B+', '9876543210', 'amit.sharma@gmail.com', 'M');
 
 REPLACE INTO llr_test_info (test_id, llr_id, test_Date, result, score, test_Location, test_Type, duration, inspector_Name, inspector_ID) VALUES
-(1, 1, '2024-01-15', 'Pass', 85, 'Delhi Center', 'Written', '01:00:00', 'Inspector A', 101);
+(1, 1, '2024-01-15', 'Pass', 85, 'Delhi Center', 'Written', '01:00:00', 'Ananth', 101);
 
 REPLACE INTO driving_license_info (dl_id, llr_id, test_id, Name, Address, dob, issue_Date, expiry_Date, Blood_Group, phone_Number, email) VALUES
-(1, 1, 1, 'Amit Sharma', 'Delhi', '1990-01-01', '2024-01-20', '2029-01-20', 'B+', '9876543210', 'amit.sharma@example.com');
+(1, 1, 1, 'Amit Sharma', 'Delhi', '1990-01-01', '2024-01-20', '2029-01-20', 'B+', '9876543210', 'amit.sharma@gmail.com');
 
 REPLACE INTO driving_license_test_info (dl_test_id, dl_id, test_Date, result, score, test_Location, test_Type, duration, inspector_Name, inspector_ID) VALUES
-(1, 1, '2024-01-25', 'Pass', 85, 'Delhi Center', 'Practical', '01:00:00', 'Inspector A', 101);
+(1, 1, '2024-01-25', 'Pass', 85, 'Delhi Center', 'Practical', '01:00:00', 'Ananth', 101);
